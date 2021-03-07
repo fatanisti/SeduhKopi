@@ -1,0 +1,12 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorCoffee1</item>
+        <item name="colorPrimaryDark">@color/colorCoffee4</item>
+        <item name="colorAccent">@color/colorCoffee3</item>
+        <item name="android:colorEdgeEffect">@color/colorCoffee2</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

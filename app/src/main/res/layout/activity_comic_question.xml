@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCoffee1">
+
+        <ImageView
+            android:id="@+id/warning_mark"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/warning_mark"
+            app:layout_constraintBottom_toTopOf="@id/comic_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight=".5"/>
+
+        <TextView
+            android:id="@+id/comic_question"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:padding="40dp"
+            android:text="@string/comic_questions_1"
+            android:textColor="@color/colorCoffee5"
+            android:fontFamily="@font/komiko"
+            app:layout_constraintBottom_toTopOf="@id/group_answer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/warning_mark"
+            app:layout_constraintVertical_weight="2"/>
+
+        <Button
+            android:id="@+id/button_opt_1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:padding="30dp"
+            android:background="@drawable/button_coffee"
+            android:text="@string/comic_answers_1_1"
+            android:textAlignment="center"
+            android:textColor="@color/colorCoffee1"
+            android:fontFamily="@font/komiko"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/button_opt_2"
+            app:layout_constraintEnd_toEndOf="@id/group_answer"
+            app:layout_constraintStart_toStartOf="@id/group_answer"
+            app:layout_constraintTop_toTopOf="@id/group_answer"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/button_opt_2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:padding="30dp"
+            android:background="@drawable/button_coffee"
+            android:text="@string/comic_answers_1_2"
+            android:textAlignment="center"
+            android:textColor="@color/colorCoffee1"
+            android:fontFamily="@font/komiko"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/button_opt_3"
+            app:layout_constraintEnd_toEndOf="@id/group_answer"
+            app:layout_constraintStart_toStartOf="@id/group_answer"
+            app:layout_constraintTop_toBottomOf="@id/button_opt_1" />
+
+        <Button
+            android:id="@+id/button_opt_3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:padding="30dp"
+            android:background="@drawable/button_coffee"
+            android:text="@string/comic_answers_1_3"
+            android:textAlignment="center"
+            android:textColor="@color/colorCoffee1"
+            android:fontFamily="@font/komiko"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/group_answer"
+            app:layout_constraintEnd_toEndOf="@id/group_answer"
+            app:layout_constraintStart_toStartOf="@id/group_answer"
+            app:layout_constraintTop_toBottomOf="@id/button_opt_2" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_answer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comic_question"
+            app:layout_constraintVertical_weight="6"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

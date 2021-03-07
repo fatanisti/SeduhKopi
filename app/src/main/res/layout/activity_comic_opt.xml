@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCoffee1">
+
+        <TextView
+            android:id="@+id/title_komik"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorCoffee3"
+            android:textSize="50sp"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:textStyle="bold"
+            android:text="@string/menu_item_1"
+            app:layout_constraintBottom_toTopOf="@id/komik_ep_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1"/>
+
+        <Button
+            android:id="@+id/button_komik_ep1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/comic_title_1"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorCoffee1"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/komiko"
+            android:gravity="center"
+            android:background="@drawable/button_paper"
+            app:layout_constraintTop_toTopOf="@id/ep_1_group"
+            app:layout_constraintBottom_toBottomOf="@id/ep_1_group"
+            app:layout_constraintStart_toStartOf="@id/ep_1_group"
+            app:layout_constraintEnd_toStartOf="@id/thumb_1"
+            app:layout_constraintHorizontal_weight="2"/>
+
+        <ImageView
+            android:id="@+id/thumb_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/thumbnail_1"
+            app:layout_constraintTop_toTopOf="@id/ep_1_group"
+            app:layout_constraintBottom_toBottomOf="@id/ep_1_group"
+            app:layout_constraintStart_toEndOf="@id/button_komik_ep1"
+            app:layout_constraintEnd_toEndOf="@id/ep_1_group"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <Button
+            android:id="@+id/button_komik_ep2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/comic_title_2"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorCoffee1"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/komiko"
+            android:gravity="center"
+            android:background="@drawable/button_paper"
+            app:layout_constraintTop_toTopOf="@id/ep_2_group"
+            app:layout_constraintBottom_toBottomOf="@id/ep_2_group"
+            app:layout_constraintStart_toEndOf="@id/thumb_2"
+            app:layout_constraintEnd_toEndOf="@id/ep_2_group"
+            app:layout_constraintHorizontal_weight="2"/>
+
+        <ImageView
+            android:id="@+id/thumb_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/thumbnail_2"
+            app:layout_constraintTop_toTopOf="@id/ep_2_group"
+            app:layout_constraintBottom_toBottomOf="@id/ep_2_group"
+            app:layout_constraintStart_toStartOf="@id/ep_2_group"
+            app:layout_constraintEnd_toStartOf="@id/button_komik_ep2"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <Button
+            android:id="@+id/button_komik_ep3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/comic_title_3"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorCoffee1"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/komiko"
+            android:gravity="center"
+            android:background="@drawable/button_paper"
+            app:layout_constraintTop_toTopOf="@id/ep_3_group"
+            app:layout_constraintBottom_toBottomOf="@id/ep_3_group"
+            app:layout_constraintStart_toStartOf="@id/ep_3_group"
+            app:layout_constraintEnd_toStartOf="@id/thumb_3"
+            app:layout_constraintHorizontal_weight="2"/>
+
+        <ImageView
+            android:id="@+id/thumb_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/thumbnail_3"
+            app:layout_constraintTop_toTopOf="@id/ep_3_group"
+            app:layout_constraintBottom_toBottomOf="@id/ep_3_group"
+            app:layout_constraintStart_toEndOf="@id/button_komik_ep3"
+            app:layout_constraintEnd_toEndOf="@id/ep_3_group"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <View
+            android:id="@+id/komik_ep_group"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintTop_toBottomOf="@id/title_komik"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_weight="9"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/ep_1_group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="button_komik_ep1, thumb_1"
+            app:layout_constraintTop_toTopOf="@id/komik_ep_group"
+            app:layout_constraintBottom_toTopOf="@id/ep_2_group"
+            app:layout_constraintStart_toStartOf="@id/komik_ep_group"
+            app:layout_constraintEnd_toEndOf="@id/komik_ep_group" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/ep_2_group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="button_komik_ep2, thumb_2"
+            app:layout_constraintTop_toBottomOf="@id/ep_1_group"
+            app:layout_constraintBottom_toTopOf="@id/ep_3_group"
+            app:layout_constraintStart_toStartOf="@id/komik_ep_group"
+            app:layout_constraintEnd_toEndOf="@id/komik_ep_group" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/ep_3_group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="button_komik_ep3, thumb_3"
+            app:layout_constraintTop_toBottomOf="@id/ep_2_group"
+            app:layout_constraintBottom_toBottomOf="@id/komik_ep_group"
+            app:layout_constraintStart_toStartOf="@id/komik_ep_group"
+            app:layout_constraintEnd_toEndOf="@id/komik_ep_group" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

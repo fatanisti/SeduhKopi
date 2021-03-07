@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCoffee1">
+
+        <TextView
+            android:id="@+id/prelude1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginVertical="20dp"
+            android:paddingHorizontal="20dp"
+            android:text="@string/prelude_1"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:fontFamily="@font/komiko"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/prelude2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/colorCoffee4"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/prelude2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:paddingHorizontal="20dp"
+            android:text="@string/prelude_2"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="@color/colorCoffee4"
+            android:fontFamily="@font/komiko"
+            app:layout_constraintTop_toBottomOf="@id/prelude1"
+            app:layout_constraintBottom_toTopOf="@id/prelude3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/prelude3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:paddingHorizontal="20dp"
+            android:text="@string/prelude_3"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="@color/colorCoffee4"
+            android:fontFamily="@font/komiko"
+            app:layout_constraintTop_toBottomOf="@id/prelude2"
+            app:layout_constraintBottom_toTopOf="@id/button_selesai"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/button_selesai"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/button_coffee"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:text="@string/detection_item_3"
+            android:gravity="center"
+            android:textColor="@color/colorCoffee1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/prelude3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/prelude4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="@string/prelude_4"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="@color/colorCoffee4"
+            android:fontFamily="@font/komiko"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            app:layout_constraintTop_toBottomOf="@id/prelude4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:constraint_referenced_ids="prelude1, prelude2, prelude3" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:constraint_referenced_ids="prelude4"
+            android:visibility="invisible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

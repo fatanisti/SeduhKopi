@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCoffee1">
+
+        <TextView
+            android:id="@+id/title_deteksi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorCoffee3"
+            android:textSize="50sp"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:textStyle="bold"
+            android:text="@string/menu_item_2"
+            app:layout_constraintBottom_toTopOf="@id/questions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/questions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/detection_script_3"
+            android:textColor="@color/colorCoffee5"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="@id/patokan"
+            app:layout_constraintBottom_toTopOf="@id/keterangan"
+            app:layout_constraintStart_toStartOf="@id/patokan"
+            app:layout_constraintEnd_toEndOf="@id/patokan"
+            app:layout_constraintVertical_weight="2" />
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/detection_item_5"
+            android:textColor="@color/colorCoffee3"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/patokan"
+            app:layout_constraintEnd_toEndOf="@id/patokan"
+            app:layout_constraintStart_toStartOf="@id/patokan"
+            app:layout_constraintTop_toBottomOf="@id/questions"
+            app:layout_constraintVertical_weight="3" />
+
+        <Button
+            android:id="@+id/button_ya"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/button_coffee"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:text="@string/opt_ya"
+            android:textAlignment="center"
+            android:textColor="@color/colorCoffee1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/group_pilihan_1"
+            app:layout_constraintEnd_toStartOf="@id/button_tidak"
+            app:layout_constraintStart_toStartOf="@id/group_pilihan_1"
+            app:layout_constraintTop_toTopOf="@id/group_pilihan_1"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+        <Button
+            android:id="@+id/button_tidak"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/button_coffee"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:text="@string/opt_tidak"
+            android:textAlignment="center"
+            android:textColor="@color/colorCoffee1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/group_pilihan_1"
+            app:layout_constraintEnd_toEndOf="@id/group_pilihan_1"
+            app:layout_constraintStart_toEndOf="@id/button_ya"
+            app:layout_constraintTop_toTopOf="@id/group_pilihan_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/seekpng_com_coffee_steam_png_944036"
+            android:text="@string/menu"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/colorCoffee1"
+            app:layout_constraintTop_toTopOf="@id/group_pilihan_2"
+            app:layout_constraintBottom_toBottomOf="@id/group_pilihan_2"
+            app:layout_constraintEnd_toStartOf="@id/button_bantuan"
+            app:layout_constraintStart_toStartOf="@id/group_pilihan_2" />
+
+        <Button
+            android:id="@+id/button_bantuan"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_coffee"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:text="@string/menu_item_3"
+            android:textAlignment="center"
+            android:textColor="@color/colorCoffee1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/group_pilihan_2"
+            app:layout_constraintBottom_toBottomOf="@id/group_pilihan_2"
+            app:layout_constraintStart_toEndOf="@id/button_menu"
+            app:layout_constraintEnd_toEndOf="@id/group_pilihan_2" />
+
+        <ProgressBar
+            android:id="@+id/determinateBar"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:progressTint="@color/colorCoffee2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_margin="20dp"
+            android:progress="0"
+            app:layout_constraintTop_toTopOf="@id/group_pilihan_2"
+            app:layout_constraintBottom_toBottomOf="@id/group_pilihan_2"
+            app:layout_constraintStart_toStartOf="@id/group_pilihan_2"
+            app:layout_constraintEnd_toEndOf="@id/group_pilihan_2"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/patokan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/title_deteksi"
+            app:layout_constraintBottom_toTopOf="@id/group_pilihan_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/group_pilihan_1"
+            app:constraint_referenced_ids="button_ya, button_tidak, determinateBar"
+            app:layout_constraintTop_toBottomOf="@id/questions"
+            app:layout_constraintBottom_toBottomOf="@id/patokan"
+            app:layout_constraintStart_toStartOf="@id/patokan"
+            app:layout_constraintEnd_toEndOf="@id/patokan"
+            app:layout_constraintVertical_weight="1"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/group_pilihan_2"
+            android:visibility="invisible"
+            app:constraint_referenced_ids="button_menu, button_bantuan, keterangan"
+            app:layout_constraintTop_toBottomOf="@id/patokan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

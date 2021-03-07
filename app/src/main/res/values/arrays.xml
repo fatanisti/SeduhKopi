@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="comic_nav_array">
+        <item>@string/comic_nav_1</item>
+        <item>@string/comic_nav_2</item>
+        <item>@string/comic_nav_3</item>
+    </string-array>
+    <string-array name="comic_address_array">
+        <item>@string/comic_address_1</item>
+        <item>@string/comic_address_2</item>
+        <item>@string/comic_address_3</item>
+    </string-array>
+    <string-array name="comic_questions_array">
+        <item>@string/comic_questions_1</item>
+        <item>@string/comic_questions_2</item>
+    </string-array>
+    <string-array name="comic_answers_array">
+        <item>@string/comic_answers_1_1</item>
+        <item>@string/comic_answers_1_2</item>
+        <item>@string/comic_answers_1_3</item>
+        <item>@string/comic_answers_2_1</item>
+        <item>@string/comic_answers_2_2</item>
+        <item>@string/comic_answers_2_3</item>
+    </string-array>
+    <string-array name="detection_questions_array">
+        <item>@string/detection_questions_1</item>
+        <item>@string/detection_questions_2</item>
+        <item>@string/detection_questions_3</item>
+        <item>@string/detection_questions_4</item>
+        <item>@string/detection_questions_5</item>
+        <item>@string/detection_questions_6</item>
+        <item>@string/detection_questions_7</item>
+        <item>@string/detection_questions_8</item>
+        <item>@string/detection_questions_9</item>
+        <item>@string/detection_questions_10</item>
+        <item>@string/detection_questions_11</item>
+        <item>@string/detection_questions_12</item>
+        <item>@string/detection_questions_13</item>
+        <item>@string/detection_questions_14</item>
+        <item>@string/detection_questions_15</item>
+        <item>@string/detection_questions_16</item>
+        <item>@string/detection_questions_17</item>
+        <item>@string/detection_questions_18</item>
+        <item>@string/detection_questions_19</item>
+        <item>@string/detection_questions_20</item>
+        <item>@string/detection_questions_21</item>
+        <item>@string/detection_questions_22</item>
+        <item>@string/detection_questions_23</item>
+        <item>@string/detection_questions_24</item>
+    </string-array>
+</resources>

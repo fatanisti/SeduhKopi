@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCoffee1"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/text_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:gravity="center"
+            android:text="@string/menu"
+            android:textColor="@color/colorCoffee3"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/group_menu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="2" />
+
+        <View
+            android:id="@+id/group_menu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/group_about"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_menu"
+            app:layout_constraintVertical_weight="4" />
+
+        <Button
+            android:id="@+id/button_komik"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_coffee"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:gravity="center"
+            android:text="@string/menu_item_1"
+            android:textColor="@color/colorCoffee1"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/button_deteksi"
+            app:layout_constraintEnd_toEndOf="@id/group_menu"
+            app:layout_constraintStart_toStartOf="@id/group_menu"
+            app:layout_constraintTop_toTopOf="@id/group_menu"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <Button
+            android:id="@+id/button_deteksi"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_coffee"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:gravity="center"
+            android:text="@string/menu_item_2"
+            android:textColor="@color/colorCoffee1"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/button_bantuan"
+            app:layout_constraintEnd_toEndOf="@id/group_menu"
+            app:layout_constraintStart_toStartOf="@id/group_menu"
+            app:layout_constraintTop_toBottomOf="@id/button_komik" />
+
+        <Button
+            android:id="@+id/button_bantuan"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_coffee"
+            android:fontFamily="@font/casualvacancy_regular"
+            android:gravity="center"
+            android:text="@string/menu_item_3"
+            android:textColor="@color/colorCoffee1"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/group_menu"
+            app:layout_constraintEnd_toEndOf="@id/group_menu"
+            app:layout_constraintStart_toStartOf="@id/group_menu"
+            app:layout_constraintTop_toBottomOf="@id/button_deteksi" />
+
+        <ImageView
+            android:id="@+id/gambar_pojok"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/gambar_komik"
+            android:src="@drawable/barista"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/group_about"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_menu"
+            app:layout_constraintHorizontal_weight="1" />
+
+        <View
+            android:id="@+id/group_about"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/gambar_pojok"
+            app:layout_constraintTop_toBottomOf="@id/group_menu"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="3" />
+
+        <ToggleButton
+            android:id="@+id/music_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/about_button"
+            android:textOff="@string/opt_off"
+            android:textOn="@string/opt_on"
+            app:layout_constraintBottom_toTopOf="@id/about_button"
+            app:layout_constraintEnd_toEndOf="@id/group_about"
+            app:layout_constraintStart_toStartOf="@id/group_about"
+            app:layout_constraintTop_toTopOf="@id/group_about"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorCoffee2"
+            android:textSize="18sp"
+            android:text="@string/about_button"
+            android:textColor="@color/colorCoffee1"
+            app:layout_constraintBottom_toBottomOf="@id/group_about"
+            app:layout_constraintEnd_toEndOf="@id/group_about"
+            app:layout_constraintStart_toStartOf="@id/group_about"
+            app:layout_constraintTop_toBottomOf="@id/music_toggle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

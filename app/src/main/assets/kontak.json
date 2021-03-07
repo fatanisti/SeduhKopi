@@ -1,0 +1,200 @@
+{
+    "contact": [
+		{
+            "id": "1",
+            "nama_klinik": "Pusat Inovasi Psikologi (PIP) Fakultas Psikologi Universitas Padjadjaran",
+            "alamat": "Jl. Ir. H. Juanda No. 438B, Dago, Kec. Coblong, Kota Bandung, Jawa Barat 40135",
+            "telepon": "Telp. 022 253 3431 / 081 1207 4388",
+            "plus_kode": "-6.869563,107.620812"
+        },
+        {
+            "id": "2",
+            "nama_klinik": "Pusat Konseling Universitas Padjadjaran (PKUP) Fakultas Psikologi Universitas Padjadjaran",
+            "alamat": "Jl. Raya Bandung Sumedang KM. 21, Kec. Jatinangor, Kab. Sumedang , Jawa Barat 45363",
+            "telepon": "Telp. 022 8428 8868",
+            "plus_kode": "-6.928062,107.773813"
+        },
+		{
+            "id": "3",
+            "nama_klinik": "Pusat Psikologi Terapan (P2T) Departemen Psikologi Universitas Pendidikan Indonesia",
+            "alamat": "Gedung Fakultas Ilmu Pendidikan Lantai 2 Universitas Pendidikan Indonesia. Jl. Dr. Setiabudi No.229, Isola, Kec. Sukasari, Kota Bandung, Jawa Barat 40154",
+            "telepon": null,
+            "plus_kode": "-6.861187,107.592938"
+        },
+		{
+            "id": "4",
+            "nama_klinik": "Pusat Pelayanan Psikologi Terpadu (P3T) Fakultas Psikologi Universitas Kristen Maranatha",
+            "alamat": "Gedung GWM Lantai 10 Universitas Kristen Maranatha. Jl. Surya Sumantri No.65, Sukawarna, Kec. Sukajadi, Kota Bandung, Jawa Barat 40164",
+            "telepon": "Telp.  022 201 2186 ext. 1314",
+            "plus_kode": "-6.886437,107.580813"
+        },
+		{
+            "id": "5",
+            "nama_klinik": "Unit Layanan Psikologi Terpadu (ULPT) Unisba",
+            "alamat": "Lantai 2. Jl. Ranggamalela No.1, Tamansari, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40116",
+            "telepon": null,
+            "plus_kode": "-6.903562,107.608063"
+        },
+		{
+            "id": "6",
+            "nama_klinik": "Wellness Psychology Center Melinda 1 Hospital",            
+            "alamat": "Lantai M. Jl. Pajajaran No.46, Pasir Kaliki, Kec. Cicendo, Kota Bandung, Jawa Barat 40171",
+            "telepon": "Telp. 022 426 6621",
+            "plus_kode": "-6.907063,107.603313"
+        },
+		{
+            "id": "7",
+            "nama_klinik": "Unit Layanan Psikologi Fakultas Psikologi UIN Sunan Gunung Djati Bandung",
+            "alamat": "Jl. A.H. Nasution No. 105, Cipadung, Kec. Cibiru, Kota Bandung, Jawa Barat 40614",
+            "telepon": "Telp. 022 781 1918",
+            "plus_kode": "-6.932313,107.716562"
+        },
+		{
+            "id": "8",
+            "nama_klinik": "Melinda Psychology Development Center (MPDC) RS. Melinda 2",
+            "alamat": "Jl. Dr. Cipto No.1, Pasir Kaliki, Kec. Cicendo, Kota Bandung, Jawa Barat 40171",
+            "telepon": "Telp. 022 423 3777",
+            "plus_kode": "-6.906187,107.598312"
+        },
+		{
+            "id": "9",
+            "nama_klinik": "Santosa Hospital Bandung Central",
+            "alamat": "Jl. Kebon Jati No.38, Kebon Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181",
+            "telepon": "Telp. 022 424 8333",
+            "plus_kode": "-6.915938,107.600687"
+        },
+		{
+            "id": "10",
+            "nama_klinik": "RSUP. Dr. Hasan Sadikin Bandung",
+            "alamat": "Jl. Pasteur No.38, Pasteur, Kec. Sukajadi, Kota Bandung, Jawa Barat 40161",
+            "telepon": "Telp. 022 203 4953",
+            "plus_kode": "-6.896437,107.598938"
+        },
+		{
+            "id": "11",
+            "nama_klinik": "Klinik Psikologi RS. Advent Bandung",
+            "alamat": "Jl. Cihampelas No.161, Cipaganti, Kec. Coblong, Kota Bandung, Jawa Barat 40131",
+            "telepon": "Telp. 022 203 8006",
+            "plus_kode": "-6.892062,107.603062"
+        },
+		{
+            "id": "12",
+            "nama_klinik": "Klinik Utama Jiwa Graha Atma",
+            "alamat": "Jl. LLRE. Martadinata, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115",
+            "telepon": "Telp. 022 420 3651",
+            "plus_kode": "-6.906688,107.611563"
+        },
+		{
+            "id": "13",
+            "nama_klinik": "RS. Hermina Pasteur",
+            "alamat": " Jl. Dr. Djundjunan No.107, Pasteur, Kec. Cicendo, Kota Bandung, Jawa Barat 40173",
+            "telepon": "Telp. 022 607 2525, Fax: 022 603 7815",
+            "plus_kode": "-6.895938,107.588938"
+        },
+		{
+            "id": "14",
+            "nama_klinik": "RS. Immanuel",
+            "alamat": "Jl. Raya Kopo No.161, Situsaeur, Kec. Bojongloa Kidul, Kota Bandung, Jawa Barat 40233",
+            "telepon": "Telp. 022 520 1656",
+            "plus_kode": "-6.935437,107.596438"
+        },
+        {
+            "id": "15",
+            "nama_klinik": "RS. Advent Bandung",
+            "alamat": "Jl. Cihampelas No.161, Cipaganti, Kec. Coblong, Kota Bandung, Jawa Barat 40131",
+            "telepon": "Telp. 022 2034 3869",
+            "plus_kode": "-6.892062,107.603062"
+        },
+		{
+            "id": "16",
+            "nama_klinik": "Poli Psikologi RSUD. Al Ihsan",
+            "alamat": "Jl. Ki Astramanggala, Baleendah, Kec. Baleendah, Bandung, Jawa Barat 40381",
+            "telepon": "Telp. 022 594 0872",
+            "plus_kode": "-7.008188,107.624063"
+        },
+		{
+            "id": "17",
+            "nama_klinik": "RS. Santo Borromeus Bandung",
+            "alamat": "Jl. Ir. H. Juanda No.100, Lebakgede, Kec. Coblong, Kota Bandung, Jawa Barat 40132",
+            "telepon": "Telp. 022 255 2000",
+            "plus_kode": "-6.893937,107.613687"
+        },
+		{
+            "id": "18",
+            "nama_klinik": "Rumah Sakit Al-Islam Bandung",
+            "alamat": "Jl. Soekarno-Hatta No. 644, Manjahlega, Kec. Rancasari, Kota Bandung, Jawa Barat 40286",
+            "telepon": "Telp. 022 756 2046",
+            "plus_kode": "-6.939063,107.669187"
+        },
+		{
+            "id": "19",
+            "nama_klinik": "RSIA. Limijati",
+            "alamat": "Jl. LLRE. Martadinata No.39, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115",
+            "telepon": "Telp. 022 420 7770, 022 8428 1333. SMS Rawat Jalan: 0812 144 7744",
+            "plus_kode": "-6.906313,107.613687"
+        },
+		{
+            "id": "20",
+            "nama_klinik": "RSJ. Provinsi Jawa Barat",
+            "alamat": "Jl. Kol. Masturi KM 7, Kertawangi, Kec. Cisarua, Bandung Barat, Jawa Barat 40551",
+            "telepon": "Telp. 022 270 0260",
+            "plus_kode": "-6.810187,107.564062"
+        },
+		{
+            "id": "21",
+            "nama_klinik": "PT. Swaparinama Biro Psikolog",
+            "alamat": "Jl. Siliwangi No. 4, Lebak Siliwangi, Kec. Coblong, Kota Bandung, Jawa Barat 40132",
+            "telepon": "Telp. 022 250 4919",
+            "plus_kode": "-6.884813,107.612938"
+        },
+		{
+            "id": "22",
+            "nama_klinik": "Praktek Psikolog: Dr. H. Ahmad Gimmy Pratama, M.Psi., Psikolog",
+            "alamat": "Jl. Tanjungsari Asri Tengah No.41, Antapati Wetan, Kec. Antapani, Kota Bandung, Jawa Barat 40291",
+            "telepon": "WA. 0853 5279 9177",
+            "plus_kode": "-6.911687,107.665562"
+        },
+		{
+            "id": "23",
+            "nama_klinik": "Biro Psikologi Persona",
+            "alamat": "Jl. PH.H. Hasan Mustofa, Pasirlayung, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40192",
+            "telepon": "Telp. 022 710 3720",
+            "plus_kode": "-6.899563,107.653188"
+        },
+		{
+            "id": "24",
+            "nama_klinik": "Dwipayana Biro Konsultasi Psikologi",
+            "alamat": "Jl. Panaitan No.15, Kebon Pisang, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40112",
+            "telepon": "Telp. 022 420 5247",
+            "plus_kode": "-6.919313,107.616812"
+        },
+		{
+            "id": "25",
+            "nama_klinik": "Biro Psikologi MAMHI (My Assistant of Mental Health Indonesia)",
+            "alamat": "Pasir Impun Valley Blok D No.1. Jl. Pasir Impun, Pasir Impun, Kec. Mandalajati, Bandung, Jawa Barat 40195",
+            "telepon": "Telp. 0821 2169 1296",
+            "plus_kode": "-6.891687,107.674688"
+        },
+		{
+            "id": "26",
+            "nama_klinik": "CDC Indigrow",
+            "alamat": "Jl. Haruman No.35, Malabar, Kec. Lengkong, Kota Bandung, Jawa Barat 40262",
+            "telepon": "Telp. 022 730 3244",
+            "plus_kode": "-6.927687,107.622312"
+        },
+		{
+            "id": "27",
+            "nama_klinik": "Pojok Psikologi Bandung",
+            "alamat": "Jl. Gegerkalong Hilir No.47, Sukarasa, Kec. Sukasari, Kota Bandung, Jawa Barat 40153 (Sebelah Kantor Telkom)",
+            "telepon": "Telp. 022 201 2059",
+            "plus_kode": "-6.871812,107.589438"
+        },
+		{
+            "id": "28",
+            "nama_klinik": "Statera Healing Studio",
+            "alamat": "Setra Glory Residence, Jl. Sukahaji Permai III No. 1, Sukarasa, Kec. Sukasari, Kota Bandung, Jawa Barat 40152",
+            "telepon": "Telp. 0855 2398 7368",
+            "plus_kode": "-6.871437,107.582937"
+        }
+    ]
+}
