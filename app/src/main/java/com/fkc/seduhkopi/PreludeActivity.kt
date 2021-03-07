@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
@@ -36,10 +37,10 @@ class PreludeActivity : AppCompatActivity() {
                     spinner.visibility = View.INVISIBLE
                 }
             }
-            Handler().postDelayed({
+            Handler(Looper.getMainLooper()).postDelayed({
                 cdt.start()
             }, 1000)
-            Handler().postDelayed({
+            Handler(Looper.getMainLooper()).postDelayed({
                 startActivity(Intent(this, MainActivity::class.java))
                 overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit)
                 this.finish()

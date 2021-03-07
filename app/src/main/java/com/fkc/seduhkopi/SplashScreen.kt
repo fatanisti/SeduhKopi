@@ -3,10 +3,10 @@ package com.fkc.seduhkopi
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.fkc.seduhkopi.databinding.SplashScreenBinding
-import kotlinx.android.synthetic.main.splash_screen.*
 
 class SplashScreen : AppCompatActivity() {
     private val splashdelay: Long = 5000
@@ -17,7 +17,7 @@ class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.splash_screen)
-        mDelayHandler = Handler()
+        mDelayHandler = Handler(Looper.getMainLooper())
         //Navigate with delay
         mDelayHandler!!.postDelayed(mRunnable, splashdelay)
     }
@@ -42,7 +42,7 @@ class SplashScreen : AppCompatActivity() {
                 // tracking progress
                 progressBarStatus = dummy
                 // Updating the progress bar
-                splash_screen_progress_bar.progress = progressBarStatus
+                binding.splashScreenProgressBar.progress = progressBarStatus
             }
             //splash_screen_progress_bar.setProgress(10)
             launchNextActivity()
